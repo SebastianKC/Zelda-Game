@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class RoomMove : MonoBehaviour
 {
     public Vector2 cameraChange;
+    //public Vector2 cameraMinChange;
+    //public Vector2 cameraMaxChange;
     public Vector3 playerChange;
     private CameraMovement cam;
     public bool needText;
