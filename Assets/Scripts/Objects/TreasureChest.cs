@@ -22,7 +22,7 @@ public class TreasureChest : Interactable
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerInRange && !isOpen)
+        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
             if (!isOpen)
             {
@@ -41,23 +41,46 @@ public class TreasureChest : Interactable
     {
         // Dialog window on
         dialogBox.SetActive(true);
-        // Dialog text = context text
+        // Dialog text = contents text
         dialogText.text = contents.itemDescription;
         // Add contents to the inventory
-
+        playerInventory.AddItem(contents);
         playerInventory.currentItem = contents;
         // Raise the signal to the player to animate
         raiseItem.Raise();
-        // Set the chest to opened
-        isOpen = true;
         // Raise the context clue
         context.Raise();
+        // Set the chest to opened
+        isOpen = true;
+        anim.SetBool("opened", true);
     }
 
     public void ChestAlreadyOpen()
     {
-        // Dialog off
-        // Set the current item to empty
-        // Raise the signal to the player to stop animating
+        if (isOpen)
+        {
+            // Dialog off
+            dialogBox.SetActive(false);
+            // Raise the signal to the player to stop animating
+            raiseItem.Raise();
+        }
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
+        {
+            context.Raise();
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
+        {
+            context.Raise();
+            playerInRange = false;
+        }
     }
 }

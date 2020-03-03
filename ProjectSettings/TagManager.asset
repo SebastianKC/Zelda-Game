@@ -52,3 +52,6 @@ TagManager:
   - name: breakable
     uniqueID: 1355449939
     locked: 0
+  - name: doorways
+    uniqueID: 3750050703
+    locked: 0

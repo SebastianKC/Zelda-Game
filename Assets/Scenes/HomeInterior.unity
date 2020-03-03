@@ -5188,17 +5188,17 @@ PrefabInstance:
     - target: {fileID: 1856286563587890503, guid: 9b24e0080ea004b4a83463248ea36622,
         type: 3}
       propertyPath: m_Name
-      value: Scene Transition
+      value: Overworld Transition
       objectReference: {fileID: 0}
     - target: {fileID: 2782143208555567836, guid: 9b24e0080ea004b4a83463248ea36622,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2782143208555567836, guid: 9b24e0080ea004b4a83463248ea36622,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.72
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 2782143208555567836, guid: 9b24e0080ea004b4a83463248ea36622,
         type: 3}
@@ -5245,6 +5245,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6107555575008511175, guid: 9b24e0080ea004b4a83463248ea36622,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1571914565433810510, guid: e98181490a3e7414b916765106e8e63b,
+        type: 3}
     - target: {fileID: 6420244603085353347, guid: 9b24e0080ea004b4a83463248ea36622,
         type: 3}
       propertyPath: sceneToLoad
@@ -5282,6 +5288,16 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeWait
       value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332735813858520708, guid: 9b24e0080ea004b4a83463248ea36622,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06951451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332735813858520708, guid: 9b24e0080ea004b4a83463248ea36622,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.0153728
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b24e0080ea004b4a83463248ea36622, type: 3}
