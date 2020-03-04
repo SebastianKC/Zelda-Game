@@ -172,6 +172,8 @@ MonoBehaviour:
   enemyName: Log
   baseAttack: 1
   moveSpeed: 1.5
+  deathEffect: {fileID: 351431996062286235, guid: 1c683aa71fa5b8d4daf36f2b1f7e23c6,
+    type: 3}
   myRigidBody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4

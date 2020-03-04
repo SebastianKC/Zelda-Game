@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startingPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public Signal playerHit;
 
     // Start is called before the first frame update
     void Start()
@@ -130,6 +131,8 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator KnockCo(float knockTime)
     {
+        playerHit.Raise();
+
         if (myRigidbody != null)
         {
             yield return new WaitForSeconds(knockTime);

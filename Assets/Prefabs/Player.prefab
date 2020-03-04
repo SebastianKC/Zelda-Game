@@ -468,7 +468,8 @@ MonoBehaviour:
   playerHealthSignal: {fileID: 11400000, guid: 3174fe5de67d087458152f1db82eb185, type: 2}
   startingPosition: {fileID: 11400000, guid: c8856d72e7a987f428f6c8c2151d5939, type: 2}
   playerInventory: {fileID: 11400000, guid: d77806bf54fc48e4a97acef36cb04c0b, type: 2}
-  receivedItemSprite: {fileID: 0}
+  receivedItemSprite: {fileID: 5755632404712270115}
+  playerHit: {fileID: 11400000, guid: f42764573910bda4e9820753f5f7fe58, type: 2}
 --- !u!95 &4640127248165469836
 Animator:
   serializedVersion: 3
